@@ -2,10 +2,10 @@
 
 :root{
     --cor1: #264712;
-    --col2: #6FAA4A;
-    --col3: #71FF19;
-    --col4: #60804D;
-    --col5: #495541;
+    --cor2: #6FAA4A;
+    --cor3: #71FF19;
+    --cor4: #60804D;
+    --cor5: #495541;
     --cor5: #2F332C;
     --cor6: rgb(202, 202, 202);
 }
@@ -20,9 +20,46 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--col3), var(--cor1) );
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1) );
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
 }
+header h1{
+    color: white;
+    font-size: 1.3cm;
+    text-align: center;
+}
+header p{
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+}
+nav{
+    background: var(--cor1);
+}
+nav a{
+    color: var(--cor3);
+    margin: 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--cor5);
+    background-color: var(--cor3);
+    text-decoration: underline;
+}
 
+footer{
+    background-color: var(--cor4);
+    padding: 0.5cm;
+    margin: 0px 10px 20px 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+main ul{
+    columns: 2;
+}
+main img.pequeno{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
