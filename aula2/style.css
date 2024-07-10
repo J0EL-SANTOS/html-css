@@ -1,5 +1,10 @@
 @charset "UTF=8";
 
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
 :root{
     --cor1: #264712;
     --cor2: #6FAA4A;
@@ -8,6 +13,8 @@
     --cor5: #495541;
     --cor5: #2F332C;
     --cor6: rgb(202, 202, 202);
+
+    --font-android: 'android', serif;
 }
 
 *{
@@ -48,8 +55,11 @@ nav a:hover{
     background-color: var(--cor3);
     text-decoration: underline;
 }
+article h1{
+    font-family: var(--font-android);
+}
 
-footer{
+article{
     background-color: var(--cor4);
     padding: 0.5cm;
     margin: 0px 10px 20px 10px;
@@ -62,4 +72,9 @@ main img.pequeno{
     width: 100%;
     display: block;
     margin: auto;
+}
+
+footer{
+    background-color: var(--cor1);
+    color: white; 
 }
