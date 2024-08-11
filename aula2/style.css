@@ -23,8 +23,9 @@
 }
 
 body{
-    background-color: var(--cor6);
+    background-color: var(--cor4);
 }
+
 
 header{
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor1) );
@@ -34,21 +35,34 @@ header{
 }
 header h1{
     color: white;
-    font-size: 1.3cm;
+    font-size: 2.5em;
     text-align: center;
+    text-shadow: 10px 2px 10px 10px rgba(0, 0, 0, 50%) ;
 }
 header p{
     padding-top: 10px;
     color: white;
     text-align: center;
+    max-width: 600px;
+    margin: auto;
+    font-size: 0.5cm;
+    padding: 10px;
+    margin-bottom: 5px;
+    
 }
 nav{
     background: var(--cor1);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.123);
+    padding: 10px;
+    
 }
 nav a{
-    color: var(--cor3);
-    margin: 10px;
+    color: var(--cor6);
+    font-size: 20px;
+    padding: 10px;
     text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 1s;
 }
 nav a:hover{
     color: var(--cor5);
@@ -60,21 +74,109 @@ article h1{
 }
 
 article{
-    background-color: var(--cor4);
+    background-color: rgb(199, 203, 206);
     padding: 0.5cm;
     margin: 0px 10px 20px 10px;
     border-radius: 0px 0px 10px 10px;
 }
-main ul{
-    columns: 2;
-}
-main img.pequeno{
-    width: 100%;
-    display: block;
+main{
+    min-height: 500px;
+    max-width: 1100px;
     margin: auto;
 }
+main img{
+    width: 100%;
+}
 
+main img.pequeno{
+    max-width: 380px;
+    margin: auto;
+    display: block;
+}
+main h2{
+    color: var(--cor6);
+    font-size: 2em;
+    background-image: linear-gradient(90deg, var(--cor1), var(--cor4));
+    text-indent: 30px;
+    border-radius: 10px;
+}
+
+main p{
+    line-height: 2em;
+    text-align: justify;
+    font-size: 1.5em;
+    text-indent: 1cm;
+    margin: 12px 0px;
+
+}
+
+aside{
+    background-color: rgb(197, 241, 241);
+    list-style-position: inside;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+aside h3{
+    background-color: var(--cor1);
+    color: aliceblue;
+    padding: 5px 0px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-indent: 30px;
+    font-size: 1.5em;
+}
+aside ul{
+    columns: 2;
+    list-style-type: '\2705\00A0\00A0';
+    font-size: 1.5em;
+}
+main strong{
+    color:#264712 ;
+    font-size: 1.1em;
+}
+main a{
+    color: var(--cor6);
+    background-color: #2a4717;
+    padding: 3px 6px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #11ee2f;
+}
+ div.video{
+    background-color: var(--cor1);
+    margin: 0px -20px 30px -20px;
+    padding: 30px;
+    padding-bottom: 60%;
+
+    position: relative;
+ }
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
 footer{
     background-color: var(--cor1);
     color: white; 
+    text-align: center;
+    font-size: .6cm;
+    padding: 5px;
+}
+footer a{
+    color: aliceblue;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: white ;
+    color: black;
+    padding: 0px 5px;
+    border-radius: 5px;
 }
