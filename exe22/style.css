@@ -8,44 +8,45 @@
     padding: 0px;
     margin: 0px;
 }
+:root{
+    --fonter1: verdana, Geneva, tahoma, sans-serif;
+    --fonter2:  "Passion One", sans-serif;
+    --fonter3:  "Sriracha", serif;
+}
 html, body{
     background-color: dark;
     min-height: 100vh;
 }
 
 section{
+    font-family: var(--fonter3);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 20px;
-}
-section.normal{
-    background-color: rgb(255, 252, 252);
-    font-family: sriracha;
-    
+    padding-left: 20px;   
+    font-size: 4.5vw;
 }
 section > p{
-    font-size: 1.5em;
-    line-height: 1.5cm;
-
-
+    padding-bottom: 2em;
 }
 
-section.imagem{
-    
-    background: url(imagens/pattern002.png) center center /  cover no-repeat fixed;
-    font-family: sriracha;
-}
 section.normal{
-    
-    background: url(imagens/pattern004.png) center / cover no-repeat fixed;
-    font-family: sriracha;
+    background-color: rgb(255, 252, 252);
+    color: #000000;
+    box-shadow: inset 6px 6px 13px 0px rgb(32, 32, 32);
 }
 
-section.normal > p{
-    background-color: rgba(0, 0, 0, 0.438);
+section#img1{
+    background: url(imagens/pattern004.png);
+}
+section#img2{
+    background: url(imagens/pattern001.png) center center / cover;
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.562);
     color: #dfdfdf;
-    padding: 5%;
+    padding: 20px;
     width: 400px;
 }
 
@@ -56,21 +57,17 @@ body{
 header{
     background-color: black;
     padding: 40px;
+    text-align: center;
 }
 header > h1{
-    font-family: "Passion One", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    text-align: center;
-    padding-bottom: 20px;    
-    font-size: 75px;
-    color: aliceblue;
-    font-variant: small-caps;
+    font-family: var(--fonter2);
+    color: white;
+    font-size: 10vw;
+
 }
 header > p{
-    color: #dfdfdf;
-    text-align: center;
-    font-size: 1.5em;
+    padding-bottom: 10px;
+    font-size: 5vw;
 }
 a{
     color: #ffffff;
@@ -79,10 +76,6 @@ a{
 a:hover{
     text-decoration: underline;
 }
-
-
-
-
 
 footer{
     background-color: black;
