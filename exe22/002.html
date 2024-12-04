@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>posicionamento </title>
+    <style>
+        
+        body{
+            height: 95vh;
+            background: url(imagens/pattern001.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+        div.quadrado{
+            background: url(imagens/wallpaper003.jpg);
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        div#q1{
+            background-position: left center;
+        }
+        div#q2{
+            background-position: right top;
+        }
+        div#q3{
+            background-position: bottom right;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+
+    <div></div>
 </body>
 </html>

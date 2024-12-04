@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisao aula 16</title>
+    <style>
+
+        body{
+            background-color: rgb(129, 129, 127);
+            height: 95vh;
+        }
+        .contain{
+            position: relative;
+            background: url(imagens/target001.png) center;
+            background-color: aquamarine;
+            background-attachment: local;
+            margin: auto;
+            width: 400px;
+            height: 400px;
+            padding: 10px;
+            border:3px solid rgb(0, 0, 0);
+            border-radius: 10px;
+        }
+        #dentro{
+            background: url(imagens/pattern001.png) center;
+            position: absolute;
+            background-color: rgba(43, 37, 78, 0.884);
+            width: 200px;
+            height: 200px;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%) ;
+        }
+    </style>
+</head>
+<body>
+    <main class="contain" >
+        <div id="dentro"></div>
+    </main>
+    </main>
+</body>
+</html>
