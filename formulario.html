@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(97, 97, 97);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>formulario</h1>
+    <form action= "formulario.php" autocomplete="on" method="post">
+        <p>
+            <label for="nome">nome</label> <input type="text" name="nome" id="nome"  placeholder="digite seu nome" autocomplete="name" minlength="3" maxlength="30" size="15" required >
+        </p>
+
+        <p>
+            <label for="senha">senha</label> <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="digite sua senha" minlength="8" maxlength="15" size="10" required>
+        </p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
