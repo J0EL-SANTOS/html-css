@@ -12,17 +12,26 @@
     </style>
 </head>
 <body>
-    <h1>formulario</h1>
-    <form action= "formulario.php" autocomplete="on" method="post">
-        <p>
-            <label for="nome">nome</label> <input type="text" name="nome" id="nome"  placeholder="digite seu nome" autocomplete="name" minlength="3" maxlength="30" size="15" required >
-        </p>
-
-        <p>
-            <label for="senha">senha</label> <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="digite sua senha" minlength="8" maxlength="15" size="10" required>
-        </p>
-        <input type="submit">
-        <input type="reset">
+        <form action= "formulario.php" autocomplete="on" method="post">
+            <fieldset>
+                <legend>exemplo de formulario</legend>
+                <p>
+                    <label for="nome">nome</label> <input type="text" name="nome" id="nome"  placeholder="digite seu nome" autocomplete="name" minlength="3" maxlength="30" size="15" required >
+                </p>
+                <p>
+                    <label for="senha">senha</label> <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="digite sua senha" minlength="8" maxlength="15" size="10" required>
+                </p>
+                <p>
+                    <label for="iemail">gmail</label>
+                    <input type="email" name="gmail" id="iemail" autocomplete="email" placeholder="digite email" required>
+                </p>
+                <p>
+                    <label for="iteleforne">numero de contato</label>
+                    <input type="tel" name="teleforne" id="iteleforne" autocomplete="tel" placeholder="(xx) xxxx-xxxx" pattern="\(\d{2}\)\d{4,5}\d{4}$">
+                </p>
+        </fieldset>
+            <input type="submit">
+            <input type="reset">
     </form>
 </body>
 </html>
