@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(117, 117, 117) ;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formularios</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="estado">Estados: </label>
+            <select name="estado" id="iestados">
+                <option value="sp">sao paulo</option>
+                <option value="mg">minas gerais</option>
+                <option value="rj">rio de janeiro</option>
+            </select>            
+        </p>
+        <p>
+            <label for="eai">oi</label>
+            <input type="text" name="eai" id="eai" list="eai1">
+            <datalist id="eai1">
+                <option value="tx">ai</option>
+                <option value="tc">a2</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">mensagem</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+        
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>

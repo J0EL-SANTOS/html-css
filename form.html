@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(134, 134, 134);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.html" method="get">
+      
+        <fieldset>
+            <legend>
+                dados persoais
+            </legend>
+
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome"  minlength="3" maxlength="30" size="15" 
+        placeholder="digite seu nome" required ><br>
+
+            <label for="senha">senha</label>
+            <input type="password" name="senha" id="senha" size="10" placeholder="senha de 4-15" min="4" max="15" required><br>
+
+        </fieldset>
+        <fieldset>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="telefone">teleforne</label>
+            <input type="tel" name="telefone" id="telefone" size="11" placeholder="(xx)x xxxx-xxxx"> <br>
+
+            <label for="num">digite numero aleatorio</label>
+            <input type="number" name="num" id="num" min="0" max="10" value="5">
+
+        </fieldset>
+        <fieldset>
+            <legend>escolha opcao</legend>
+
+            <input type="radio" name="opcao"
+            id="tenis" value="tenis" checked>
+            <label for="tenis">tenis</label><br>
+            
+            <input type="radio" name="opcao" id="bola" value="bola">
+            <label for="bola">bola</label>
+
+        </fieldset>
+        <fieldset>
+
+            <legend>calendario</legend>
+            <label for="data">seleconar data</label>
+            <input type="date" name="data" id="data">
+        </fieldset>
+
+        <fieldset>
+            <legend>multiplas opcoes</legend>
+            <input type="checkbox" name="basquete" id="ibasquete" checked>
+            <label for="ibasquete">basquete</label><br>
+
+            <input type="checkbox" name="fut" id="ifut">
+            <label for="ifut">futebol</label><br>
+
+            <input type="checkbox" name="natacao" id="inatacao">
+            <label for="inatacao">natação</label><br>
+
+            <input type="checkbox" name="tenis" id="itenis" >
+            <label for="itenis">tenis</label>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+
+    
+    </form>
+    
+</body>
+</html>
