@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*mostrara no print da tela*/
+
+html{
+    font-family: Arial, Helvetica, sans-serif, monospace;
+}
+
+menu{
+    display: none;
+}
